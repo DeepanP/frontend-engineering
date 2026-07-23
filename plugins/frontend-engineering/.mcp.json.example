@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "github": {
+      "description": "Configure an approved GitHub MCP server"
+    },
+    "work-tracker": {
+      "description": "Configure an approved Jira/work-tracker MCP server"
+    },
+    "browser": {
+      "description": "Configure an approved browser/Playwright MCP server"
+    },
+    "documentation": {
+      "description": "Configure an approved documentation MCP server"
+    }
+  }
+}

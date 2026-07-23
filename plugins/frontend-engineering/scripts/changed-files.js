@@ -1,0 +1,1 @@
+const {execFileSync}=require("child_process");const g=a=>{try{return execFileSync("git",a,{encoding:"utf8"}).trim()}catch{return""}};const files=[...new Set([...g(["diff","--name-only"]).split("\n"),...g(["diff","--cached","--name-only"]).split("\n")].filter(Boolean))];console.log(JSON.stringify({changedFiles:files},null,2));

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "node \"$COPILOT_PLUGIN_ROOT/scripts/session-start.js\"",
+        "powershell": "node \"$env:COPILOT_PLUGIN_ROOT/scripts/session-start.js\""
+      }
+    ]
+  }
+}

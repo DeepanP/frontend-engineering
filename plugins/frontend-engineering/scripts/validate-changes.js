@@ -1,0 +1,1 @@
+const {spawnSync}=require("child_process"),path=require("path");const r=spawnSync(process.execPath,[path.join(__dirname,"detect-project.js")],{encoding:"utf8"});process.stdout.write(r.stdout||"");if(r.stderr)process.stderr.write(r.stderr);process.exit(r.status||0);
