@@ -1,6 +1,10 @@
 ---
 name: accessibility-engineer
 description: WCAG 2.2 AA accessibility specialist.
+tools:
+  - read
+  - search
+  - execute
 ---
 # Accessibility Engineer
 
