@@ -19,3 +19,20 @@ all applicable upstream license, copyright, attribution, and notice requirements
 
 GitHub, GitHub Copilot, and related marks are trademarks of GitHub, Inc.
 This project is not affiliated with, endorsed by, or sponsored by GitHub, Inc.
+
+## Community Skill Bootstrap
+
+The Frontend Engineering Toolkit may discover and recommend third-party
+resources through `/bootstrap-FE-skill`.
+
+Community resources are maintained independently from this project and remain
+subject to their respective upstream licenses and terms.
+
+Installation or recommendation of a third-party resource does not transfer
+ownership of that resource to this project.
+
+The Frontend Engineering Toolkit's Apache License 2.0 applies only to content
+owned by or contributed to this project unless otherwise stated.
+
+Users should review third-party resources before granting them repository,
+execution, network, MCP, or other privileged capabilities.
