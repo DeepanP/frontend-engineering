@@ -1,0 +1,14 @@
+# Community Skill Guardrails
+- Prefer original upstream sources.
+- Show source before installation.
+- Require developer confirmation.
+- Preserve licensing and attribution.
+- Check existing capability overlap.
+- Explain files that will change.
+- Never silently install or execute downloaded scripts.
+- Never remove copyright/license notices.
+- Never claim third-party resources as project-owned.
+- Never overwrite existing skills without confirmation.
+- Never automatically promote community skills into Layer 1.
+- Never expose credentials or secrets.
+- Review community skills before granting write, execute, network, repository, or MCP capabilities.

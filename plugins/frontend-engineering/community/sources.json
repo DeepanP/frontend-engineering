@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "id": "awesome-copilot",
+      "name": "Awesome Copilot",
+      "repository": "github/awesome-copilot",
+      "type": "github",
+      "enabled": true,
+      "categories": ["frontend", "react", "typescript", "testing", "accessibility", "performance"]
+    }
+  ]
+}

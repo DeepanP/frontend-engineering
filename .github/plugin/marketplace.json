@@ -11,7 +11,7 @@
     {
       "name": "frontend-engineering",
       "description": "React, TypeScript and Node.js engineering agents, skills, guardrails and hooks.",
-      "version": "2.1.2",
+      "version": "2.2.0",
       "source": "plugins/frontend-engineering"
     }
   ]
