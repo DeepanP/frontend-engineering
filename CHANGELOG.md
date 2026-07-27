@@ -21,3 +21,10 @@ All notable changes to `frontend-engineering` are documented here.
 - PATCH: fixes or non-breaking instruction/guardrail corrections
 - MINOR: backward-compatible skills, agents or workflows
 - MAJOR: removed/renamed entry points, breaking project requirements or incompatible behavior
+
+## [2.1.1] - 2026-07-27
+
+### Added
+- Apache License 2.0
+- Project NOTICE
+- Third-party attribution and licensing guidance

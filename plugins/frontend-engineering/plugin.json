@@ -1,7 +1,7 @@
 {
   "name": "frontend-engineering",
   "description": "Production frontend engineering toolkit for React, TypeScript and Node.js with reusable agents, skills, guardrails and hooks.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": {
     "name": "Engineering Platform Team"
   },
