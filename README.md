@@ -2,6 +2,20 @@
 
 A GitHub Copilot plugin marketplace containing a reusable frontend engineering plugin plus organization and project overlays.
 
+<p align="center">
+  <img
+    src="assets/frontend-engineering-logo.png"
+    alt="Frontend Engineering Copilot Marketplace"
+    width="700"
+  />
+</p>
+
+<h1 align="center">Frontend Engineering Copilot Marketplace</h1>
+
+<p align="center">
+  An evolving open-source toolkit for agentic frontend engineering.
+</p>
+
 ## Repository structure
 
 ```text
