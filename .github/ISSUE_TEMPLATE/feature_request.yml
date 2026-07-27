@@ -1,0 +1,63 @@
+name: Feature Request
+description: Suggest an improvement to the frontend engineering toolkit
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agent
+        - Skill
+        - Guardrail
+        - Orchestration
+        - Testing
+        - Accessibility
+        - Performance
+        - Architecture
+        - Developer Experience
+        - MCP Integration
+        - Community Integration
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What frontend engineering problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      placeholder: |
+        Developer request
+        → Agent
+        → Skill
+        → Validation
+        → Expected result
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Which layer?
+      options:
+        - Layer 1 — Engineering Standard
+        - Layer 2 — Organization Policy
+        - Layer 3 — Project Overlay
+        - Not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be interested in contributing this improvement.
