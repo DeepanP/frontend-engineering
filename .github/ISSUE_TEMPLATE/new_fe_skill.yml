@@ -1,0 +1,75 @@
+name: Propose Frontend Skill
+description: Propose a new reusable frontend engineering skill
+title: "[FE Skill]: "
+labels: ["skill"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      placeholder: react-state-review
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Engineering problem
+      description: What frontend problem should this skill solve?
+    validations:
+      required: true
+  - type: textarea
+    id: activation
+    attributes:
+      label: When should Copilot use this skill?
+      description: Give concrete scenarios or developer requests.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - React
+        - TypeScript
+        - Architecture
+        - Testing
+        - Accessibility
+        - Performance
+        - Security
+        - Code Review
+        - Dependency Management
+        - Tech Debt
+        - Developer Experience
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Suggested workflow
+      placeholder: |
+        1. Inspect...
+        2. Identify...
+        3. Analyze...
+        4. Validate...
+        5. Report...
+    validations:
+      required: true
+  - type: textarea
+    id: guardrails
+    attributes:
+      label: Important guardrails
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Standards, documentation, specifications, or upstream projects.
+  - type: checkboxes
+    id: source
+    attributes:
+      label: Contribution requirements
+      options:
+        - label: This proposal does not knowingly copy incompatible third-party content.
+          required: true
+        - label: I will identify third-party sources if the contribution is derived from them.
+          required: true

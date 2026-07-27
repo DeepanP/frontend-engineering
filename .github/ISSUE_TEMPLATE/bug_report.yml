@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report a problem with an agent, skill, guardrail, plugin, or workflow
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Agent
+        - Skill
+        - Guardrail
+        - Orchestration
+        - Marketplace / Plugin
+        - Versioning
+        - Project Overlay
+        - Organization Policy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install...
+        2. Select agent...
+        3. Run prompt...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        Copilot environment/version:
+        OS:
+        React:
+        TypeScript:
+        Node:
+        Package manager:
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or evidence
+      description: Add relevant output with secrets removed.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked for an existing issue.
+          required: true
+        - label: I removed secrets and private information.
+          required: true
