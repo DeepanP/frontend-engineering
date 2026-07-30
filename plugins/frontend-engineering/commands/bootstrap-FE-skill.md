@@ -19,3 +19,10 @@ code review, dependency management, security, design systems and DX.
 Do not silently install resources, execute unknown downloaded scripts, overwrite
 existing skills, remove notices, modify organization policy, or promote community
 content into Layer 1 without explicit approval.
+
+## v2.3 Policy Integration
+- Discover policy-packs/registry.json
+- List available policy packs
+- Generate .github/copilot/project-policy.json
+- Never overwrite existing configuration without approval
+

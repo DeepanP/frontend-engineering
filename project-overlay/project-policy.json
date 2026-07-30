@@ -1,0 +1,9 @@
+{
+  "engineeringStandard": "v2.1",
+
+  "policyPacks": [
+    "react-enterprise",
+    "wcag-2.2",
+    "owasp-frontend"
+  ]
+}

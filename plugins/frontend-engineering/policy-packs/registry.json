@@ -1,0 +1,9 @@
+{
+ "version":"1.0",
+ "packs":[
+  {"id":"react-enterprise","title":"React Enterprise"},
+  {"id":"wcag-2.2","title":"WCAG 2.2"},
+  {"id":"owasp-frontend","title":"OWASP Frontend"},
+  {"id":"micro-frontend","title":"Micro Frontend"}
+ ]
+}
