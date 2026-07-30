@@ -96,3 +96,8 @@ python3 scripts/release-check.py
 See `VERSIONING.md` and `CHANGELOG.md`.
 
 GitHub Actions runs the version/source/structure checks whenever plugin, marketplace, release-script, or changelog files change.
+
+
+## Policy Packs (v2.3)
+Policy packs live under `plugins/frontend-engineering/policy-packs`.
+Bootstrap discovers them and generates `project-policy.json`.

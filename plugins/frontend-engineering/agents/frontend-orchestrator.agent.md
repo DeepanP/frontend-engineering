@@ -24,6 +24,64 @@ When a specialist capability is required:
 4. Preserve the recommended workflow even when execution remains in a single session.
 5. Clearly state which specialists were consulted or recommended.
 
+## Context Resolution (v2.3)
+
+Before selecting or delegating to specialist skills, resolve the engineering
+context in the following order.
+
+1. Engineering Standard
+2. Organization Policy
+3. Project Policy
+4. Project Overlay
+5. Enabled Policy Packs
+
+### Project Policy
+
+If `.github/copilot/project-policy.json` exists:
+
+- Read the enabled policy pack identifiers.
+- Ignore unknown identifiers.
+- Continue execution if the file does not exist.
+
+### Policy Pack Discovery
+
+Available policy packs are defined in:
+
+plugins/frontend-engineering/policy-packs/registry.json
+
+Each enabled policy pack may contribute:
+
+- policy.md
+- validation.md
+- checklist.md
+
+Policy packs extend the engineering context only.
+
+They must never replace:
+
+- engineering-policy
+- production-guardrails
+- organization-policy
+
+If duplicate guidance exists:
+
+Engineering Standard
+<
+Organization Policy
+<
+Project Policy
+<
+Project Overlay
+<
+Policy Pack
+
+Later layers may extend or specialize earlier guidance but must not remove
+mandatory engineering or safety rules.
+
+Missing policy packs are non-fatal.
+
+Continue orchestration using the remaining resolved context.
+
 ## Routing
 
 Feature
@@ -84,7 +142,8 @@ Before completion:
 
 - Run project-supported validation.
 - Verify tests where applicable.
-- Perform final code review.
+- Verify enabled Policy Packs were resolved.
+- Report unresolved Policy Packs.
 - Confirm engineering-policy and production-guardrails have been satisfied.
 
 ## Safety
@@ -104,7 +163,15 @@ If the requested frontend task requires a capability that is not available
 in the installed toolkit:
 
 1. Do not invent a missing specialist capability.
-2. Recommend `/bootstrap-FE-skill`.
+2. Recommend /bootstrap-FE-skill.
+
+If project-policy.json is missing,
+bootstrap may initialize it after
+developer approval.
+
+Bootstrap may also present available
+Policy Packs for optional enablement.
+
 3. Use `community-skill-bootstrap` to discover appropriate community resources.
 4. Require explicit developer approval before installation.
 5. Resume orchestration after the required capability becomes available.
@@ -116,6 +183,7 @@ Never automatically install community resources during another workflow.
 Summarize:
 
 - Primary workflow executed
+- Policy Packs resolved
 - Specialists consulted
 - Specialists delegated (if supported)
 - Validation performed
