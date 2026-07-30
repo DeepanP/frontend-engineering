@@ -46,13 +46,15 @@ If `.github/copilot` does not exist:
 
 ### Community Standards
 
-If Policy Packs are available:
 
-- Discover `policy-packs/registry.json`.
-- List available Policy Packs.
-- Recommend relevant packs based on the detected project.
-- Require explicit developer approval before enabling any Policy Pack.
-- Record approved Policy Packs in `project-policy.json`.
+If `.github/copilot` does not exist:
+
+- Create the `.github/copilot` directory.
+- Create `project-policy.json`.
+- Create `project-overlay/project-overlay.md`.
+- Create any supporting README files.
+- Apply the changes directly to the current workspace.
+- Request confirmation only before overwriting existing files.
 
 ### Existing Projects
 
@@ -62,3 +64,4 @@ If the project has already been initialized:
 - Validate `project-policy.json`.
 - Report missing or outdated configuration.
 - Never overwrite existing configuration without approval.
+
