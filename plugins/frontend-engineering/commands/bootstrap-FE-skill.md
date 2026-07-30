@@ -20,9 +20,45 @@ Do not silently install resources, execute unknown downloaded scripts, overwrite
 existing skills, remove notices, modify organization policy, or promote community
 content into Layer 1 without explicit approval.
 
-## v2.3 Policy Integration
-- Discover policy-packs/registry.json
-- List available policy packs
-- Generate .github/copilot/project-policy.json
-- Never overwrite existing configuration without approval
+## v2.3 Project Initialization
 
+Before discovering community resources, determine whether the current
+repository has already been initialized for the Frontend Engineering Toolkit.
+
+### Project Detection
+
+Detect:
+
+- Framework (React, Next.js, Angular, Vue, etc.)
+- Language (TypeScript / JavaScript)
+- Build tool (Vite, Webpack, Turbopack, etc.)
+- Package manager
+- Existing `.github/copilot` configuration
+
+### Project Initialization
+
+If `.github/copilot` does not exist:
+
+- Create the project overlay structure.
+- Create `.github/copilot/project-policy.json`.
+- Create a default project overlay using the detected framework.
+- Do not overwrite existing files without explicit approval.
+
+### Community Standards
+
+If Policy Packs are available:
+
+- Discover `policy-packs/registry.json`.
+- List available Policy Packs.
+- Recommend relevant packs based on the detected project.
+- Require explicit developer approval before enabling any Policy Pack.
+- Record approved Policy Packs in `project-policy.json`.
+
+### Existing Projects
+
+If the project has already been initialized:
+
+- Validate the existing overlay.
+- Validate `project-policy.json`.
+- Report missing or outdated configuration.
+- Never overwrite existing configuration without approval.
