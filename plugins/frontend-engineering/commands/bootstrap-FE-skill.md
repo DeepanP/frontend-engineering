@@ -1,67 +1,63 @@
 ---
 name: bootstrap-FE-skill
-description: Discover and bootstrap relevant community frontend engineering skills from approved upstream sources.
+description: Initialize the Frontend Engineering Toolkit for the current repository and optionally discover and install approved community resources.
 ---
-# Bootstrap Frontend Engineering Community Skills
-1. Inspect the project and existing toolkit capabilities.
-2. Identify frontend capability gaps.
-3. Read `community/sources.json`.
-4. Discover relevant upstream resources and prefer original sources.
-5. Show name, purpose, source, license when available, and proposed destination.
-6. Require explicit developer confirmation.
-7. Install only approved resources using supported mechanisms.
-8. Preserve upstream licensing and attribution.
-9. Report installed, skipped, and changed resources.
 
-Prioritize React, TypeScript, testing, accessibility, performance, architecture,
-code review, dependency management, security, design systems and DX.
+# Bootstrap Frontend Engineering Toolkit
 
-Do not silently install resources, execute unknown downloaded scripts, overwrite
-existing skills, remove notices, modify organization policy, or promote community
-content into Layer 1 without explicit approval.
+1. Detect the current project.
+2. Initialize `.github/copilot` if required.
+3. Validate the existing toolkit configuration.
+4. Discover optional community resources.
+5. Require developer approval before installing optional resources.
 
-## v2.3 Project Initialization
-
-Before discovering community resources, determine whether the current
-repository has already been initialized for the Frontend Engineering Toolkit.
-
-### Project Detection
+## Phase 1 - Project Detection
 
 Detect:
-
-- Framework (React, Next.js, Angular, Vue, etc.)
-- Language (TypeScript / JavaScript)
-- Build tool (Vite, Webpack, Turbopack, etc.)
+- Framework
+- Language
 - Package manager
-- Existing `.github/copilot` configuration
+- Build tool
+- Existing `.github/copilot`
 
-### Project Initialization
+## Phase 2 - Project Initialization
 
-If `.github/copilot` does not exist:
+If `.github/copilot` does not exist create:
 
-- Create the project overlay structure.
-- Create `.github/copilot/project-policy.json`.
-- Create a default project overlay using the detected framework.
-- Do not overwrite existing files without explicit approval.
+.github/copilot/
+- project-policy.json
+- project-overlay/
+- prompts/
+- README.md
 
-### Community Standards
+Never overwrite existing files without approval.
 
+## Phase 3 - Community Discovery
 
-If `.github/copilot` does not exist:
+Read `community/sources.json`.
 
-- Create the `.github/copilot` directory.
-- Create `project-policy.json`.
-- Create `project-overlay/project-overlay.md`.
-- Create any supporting README files.
-- Apply the changes directly to the current workspace.
-- Request confirmation only before overwriting existing files.
+Discover approved:
+- Skills
+- Agents
+- Hooks
+- Policy Packs
 
-### Existing Projects
+Show:
+- Name
+- Purpose
+- Source
+- License
+- Destination
 
-If the project has already been initialized:
+Require approval before installation.
 
-- Validate the existing overlay.
-- Validate `project-policy.json`.
-- Report missing or outdated configuration.
-- Never overwrite existing configuration without approval.
+## Phase 4 - Validation
 
+Validate:
+- project-policy.json
+- project-overlay
+- toolkit configuration
+
+## Safety
+
+Never silently install resources, overwrite configuration, execute downloaded scripts or modify application source code.

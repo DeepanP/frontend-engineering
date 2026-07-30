@@ -1,0 +1,9 @@
+{
+  "name": "frontend-engineering",
+  "version": "2.3.0",
+  "commands": [
+    "bootstrap-FE-skill",
+    "frontend-orchestrator"
+  ],
+  "initialized": true
+}
